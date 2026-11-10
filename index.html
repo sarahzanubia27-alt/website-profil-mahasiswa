@@ -3,22 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profil Mahasiswa</title>
+  <title>Sarah Zanubia Nawalinnada</title>
   <style>
-    body { font-family: Arial; background: #eaf2f8;
-           text-align: center; padding: 40px; }
-    .card { background: white; max-width: 500px;
-            margin: auto; padding: 30px; border-radius: 15px; }
-    h1 { color: #1769aa; }
+    body {
+      font-family: Arial;
+      background: #c9b6b3;
+      margin: 0;
+      color: white;
+    }
+    .header {
+      background: #e5b5b8;
+      padding: 30px 40px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 32px;
+      text-transform: uppercase;
+    }
+    .header p {
+      margin: 6px 0 0;
+      color: #3a3a33;
+    }
+    .bar {
+      background: #f0dfc0;
+      height: 14px;
+    }
+    .container {
+      display: flex;
+      gap: 22px;
+      padding: 26px;
+      max-width: 1100px;
+      margin: auto;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    .card {
+      background: #9fb08a;
+      border-radius: 30px;
+      padding: 28px;
+      flex: 1;
+      min-width: 300px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    }
+    .card.pink {
+      background: #e5b5b8;
+      color: #3a3a33;
+    }
+    .foto {
+      width: 200px;
+      height: 250px;
+      object-fit: cover;
+      background: #f0dfc0;
+      border: 3px solid #d9c9a8;
+      display: block;
+      margin-bottom: 20px;
+    }
+    h2 {
+      background: #e5b5b8;
+      color: #3a3a33;
+      border: 2px solid #d49fa3;
+      border-radius: 14px;
+      padding: 10px 18px;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .card.pink h2 {
+      background: #f0dfc0;
+      border-color: #d9c9a8;
+    }
+    h3 {
+      margin: 0 0 6px;
+      color: #f0dfc0;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .nama {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0 0 18px;
+      text-transform: uppercase;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 15px;
+    }
+    ul {
+      line-height: 2;
+      font-size: 15px;
+      padding-left: 20px;
+    }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Profil Mahasiswa</h1>
-    <h2>Nama: Sarah Zanubia</h2>
-    <p>Program Studi: Manajemen Informasi Komunikasi</p>
-    <p>Saya sedang belajar Cloud Computing.</p>
-    <p>Email: sarahzanubia27@gmail.com</p>
+
+  <div class="header">
+    <h1>Sarah Zanubia Nawalinnada</h1>
+    <p>Manajemen Informasi Komunikasi</p>
   </div>
+  <div class="bar"></div>
+
+  <div class="container">
+
+    <div class="card">
+      <!-- Ganti foto.jpg dengan nama file fotomu -->
+      <img class="foto" src="foto.jpg" alt="Foto Sarah">
+
+      <h3>Nama</h3>
+      <p class="nama">Sarah Zanubia Nawalinnada</p>
+
+      <h3>Program Studi</h3>
+      <p class="nama">Manajemen Informasi Komunikasi</p>
+
+      <h2>Deskripsi Singkat</h2>
+      <p>Merupakan seseorang yang memiliki kepribadian cukup santai, kreatif, dan memiliki rasa ingin tahu yang tinggi. Senang mencoba hal-hal baru, mengeksplorasi ide, serta memiliki ketertarikan pada bidang media, komunikasi, dan dunia kreatif.</p>
+      <p>Dalam kesehariannya, termasuk pribadi yang cukup aktif dalam berbagai kegiatan dan senang berinteraksi dengan orang lain. Memiliki perhatian terhadap detail dan cenderung ingin memastikan sesuatu berjalan sesuai dengan yang diharapkan. Selain itu, juga terbuka untuk belajar dan menerima pengalaman baru.</p>
+      <p>Di sisi lain, terkadang masih merasa ragu terhadap kemampuan diri sendiri, tetapi memiliki keinginan untuk terus berkembang, meningkatkan kepercayaan diri, dan belajar dari setiap pengalaman.</p>
+    </div>
+
+    <div class="card pink">
+      <h2>Hobi atau Minat</h2>
+      <ul>
+        <li>Mendengarkan musik.</li>
+        <li>Bermain game.</li>
+        <li>Menonton film atau serial.</li>
+        <li>Mengeksplorasi desain dan kreativitas visual.</li>
+        <li>Tertarik pada dunia media dan broadcasting.</li>
+        <li>Mengikuti kegiatan event dan organisasi.</li>
+        <li>Mempelajari komunikasi dan bahasa asing.</li>
+      </ul>
+    </div>
+
+  </div>
+
 </body>
 </html>
